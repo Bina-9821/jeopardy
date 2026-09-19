@@ -10,7 +10,7 @@ type AuctionScreenProps = {
 }
 
 export function AuctionScreen({ teams, categories, onAssignDefender, onStartGame }: AuctionScreenProps) {
-  const defendedCategories = categories.filter((category) => category.id !== 'cultura-generale')
+  const defendedCategories = categories.filter((category) => category.id !== 'categoria-6')
 
   const [selectedTeams, setSelectedTeams] = useState<Record<string, string>>({})
 
